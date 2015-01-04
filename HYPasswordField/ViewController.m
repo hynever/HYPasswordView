@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "HYPasswordView.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate,HYPasswordViewDelegate>
 
 @end
 
@@ -16,7 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    HYPasswordFieldModel *model = [HYPasswordFieldModel hyPasswordFieldModelWithSize:CGSizeMake(50, 50) margin:5 count:4];
+    HYPasswordView *passwordView = [HYPasswordView hyPasswordViewWithWidthFieldModel:model];
+    passwordView.frame = CGRectMake(100, 100, 100, 100);
+    passwordView.delegate = self;
+    [self.view addSubview:passwordView];
+}
+
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSLog(@"range:%@",NSStringFromRange(range));
+    NSLog(@"string:%@",string);
+    return YES;
+}
+
+-(void)hyPasswordDidEndInput:(HYPasswordView *)passwordView andPasswordStr:(NSString *)passwordStr
+{
+    NSLog(@"%@",passwordStr);
 }
 
 - (void)didReceiveMemoryWarning {

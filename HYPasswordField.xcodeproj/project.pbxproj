@@ -14,6 +14,7 @@
 		BE5199791A51888100A7530D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5199781A51888100A7530D /* Images.xcassets */; };
 		BE51997C1A51888100A7530D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE51997A1A51888100A7530D /* LaunchScreen.xib */; };
 		BE5199881A51888200A7530D /* HYPasswordFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5199871A51888200A7530D /* HYPasswordFieldTests.m */; };
+		BE5199961A51895B00A7530D /* HYPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5199951A51895B00A7530D /* HYPasswordView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		BE5199811A51888200A7530D /* HYPasswordFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYPasswordFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5199861A51888200A7530D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE5199871A51888200A7530D /* HYPasswordFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPasswordFieldTests.m; sourceTree = "<group>"; };
+		BE5199941A51895B00A7530D /* HYPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPasswordView.h; sourceTree = "<group>"; };
+		BE5199951A51895B00A7530D /* HYPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPasswordView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				BE5199781A51888100A7530D /* Images.xcassets */,
 				BE51997A1A51888100A7530D /* LaunchScreen.xib */,
 				BE51996B1A51888100A7530D /* Supporting Files */,
+				BE5199941A51895B00A7530D /* HYPasswordView.h */,
+				BE5199951A51895B00A7530D /* HYPasswordView.m */,
 			);
 			path = HYPasswordField;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				BE5199741A51888100A7530D /* ViewController.m in Sources */,
 				BE5199711A51888100A7530D /* AppDelegate.m in Sources */,
+				BE5199961A51895B00A7530D /* HYPasswordView.m in Sources */,
 				BE51996E1A51888100A7530D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +418,7 @@
 				BE51998D1A51888200A7530D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE51998E1A51888200A7530D /* Build configuration list for PBXNativeTarget "HYPasswordFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				BE5199901A51888200A7530D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
